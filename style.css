@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.video{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.video video{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video .text-contents{
+    text-align: center;
+}
+
+.video .text-contents h1{
+    margin-bottom: 0.6rem;
+}
+
+.video .text-contents h1{
+    font-size: 2rem;
+    color: white;
+}
+
+.video .text-contents h2{
+    font-size: 5rem;
+    color: white;
+}
+
+@media screen and (max-width : 470px) {
+    .video .text-contents h2{
+        font-size: 3rem;
+    }
+
+    .video .text-contents h1{
+        font-size: 1rem;
+    }
+}
